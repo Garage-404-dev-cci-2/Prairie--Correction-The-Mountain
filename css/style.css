@@ -1,0 +1,145 @@
+/* Globals  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&family=Rokkitt:wght@300;400;800&display=swap');
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rokkitt', serif;
+}
+
+h1{
+    font-size: 4rem;
+}
+h1 span{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p,a,li span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+blockquote p {
+    font-style: italic;
+    font-weight: 300;
+}
+blockquote .thin{
+    font-weight: 100;
+}
+figcaption{
+    font-size: 2rem;
+    font-family: 'Rokkitt', serif;
+    font-weight: 300;
+
+}
+
+/* Home */
+
+#home{
+    background-image: url(../images/bg_header.jpg);
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 200px;
+
+}
+.brand-logo{
+
+}
+.brand-logo img{
+    width: 200px;
+}
+.brand-logo p{
+    font-size: 2.5rem;
+    margin: 0;
+    margin-top: 8px;
+    color: black;
+    font-weight: 300;
+}
+
+
+.offcanvas.offcanvas-start.menu{
+    width: 150px;
+}
+
+.menu {
+    box-shadow: 5px 0px 5px black;
+}
+
+
+/* About */
+
+#about{
+    background-image: url(../images/bg_nuage.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about-content{
+    background-color: #179ac568;
+    max-width: 600px;
+    padding: 50px;
+}
+
+/* history */
+
+#history{
+    background-image: url(../images/bg_appareil_photo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Photos */
+
+.photos{
+    margin: 0 auto;
+}
+.photo-sizer{
+    width: 400px;
+}
+.photo-item{
+    width: 400px;
+    padding: 10px;
+}
+.photo-item img{
+    width: 100%;
+    height: auto;
+}
+.photo-item--width2{
+    width: 800px;
+}
+
+
+/* contact */
+#contact{
+    position: relative;
+    overflow: hidden;
+    background-color: #062b3742;
+}
+
+.contact-img{
+    position: absolute;
+    top: 0;
+    width: 280%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    filter: brightness(60%);
+}
+
+
+
+/* Responsive media */
+@media (max-width: 992px){
+    .photo-item, .photo-item--width2{
+        width: 100% !important;
+    }
+    .photo-sizer{
+        width: auto;
+    }
+}
